@@ -86,4 +86,4 @@ Inputs found:
 
 **Answer:**
 
-![GitHub DevTools Elements Panel Screenshot](screenshot.png)
+![GitHub DevTools Elements Panel Screenshot](images/screenshot.png)
