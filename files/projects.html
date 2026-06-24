@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevor Wachira - Projects</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; color: #333; }
+        nav { background-color: #0076ff; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: #fff; font-size: 1.3rem; font-weight: bold; text-decoration: none; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 0.95rem; }
+        nav ul li a:hover, nav ul li a.active { text-decoration: underline; font-weight: bold; }
+        main { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        h1 { font-size: 2rem; margin-bottom: 30px; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+        .project-card { border: 1px solid #ccc; border-radius: 8px; overflow: hidden; background: #fff; }
+        .project-card img { width: 100%; display: block; }
+        .project-card-body { padding: 15px; }
+        .project-card-body h2 { font-size: 1.1rem; margin-bottom: 8px; }
+        .project-card-body p { font-size: 0.9rem; color: #555; line-height: 1.6; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Trevor Wachira</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>My Projects</h1>
+
+        <section class="projects-grid">
+
+            <article class="project-card">
+                <img src="https://placehold.co/400x200" alt="Screenshot of personal portfolio website">
+                <div class="project-card-body">
+                    <h2>Personal Portfolio Website</h2>
+                    <p>
+                        A multi-page portfolio site built with HTML and CSS to showcase my skills,
+                        projects, and contact information.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="https://placehold.co/400x200" alt="Screenshot of contact form project">
+                <div class="project-card-body">
+                    <h2>Accessible Contact Form</h2>
+                    <p>
+                        A fully accessible HTML contact form with proper labels, fieldsets,
+                        validation, and semantic structure.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="https://placehold.co/400x200" alt="Screenshot of semantic HTML conversion project">
+                <div class="project-card-body">
+                    <h2>Semantic HTML Conversion</h2>
+                    <p>
+                        Converted a poorly structured div-based layout into a fully semantic
+                        HTML page using proper tags like header, nav, main, article, and footer.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trevor Wachira. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

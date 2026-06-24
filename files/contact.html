@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevor Wachira - Contact</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; color: #333; }
+        nav { background-color: #0076ff; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: #fff; font-size: 1.3rem; font-weight: bold; text-decoration: none; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 0.95rem; }
+        nav ul li a:hover, nav ul li a.active { text-decoration: underline; font-weight: bold; }
+        main { max-width: 650px; margin: 50px auto; padding: 0 20px; }
+        h1 { font-size: 2rem; margin-bottom: 30px; }
+        fieldset { background-color: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        legend { font-weight: bold; font-size: 1.1rem; padding: 0 10px; color: #444; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.95rem; }
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #0076ff; }
+        .optional { font-weight: normal; font-size: 0.85rem; color: #888; }
+        .checkbox-group { display: flex; align-items: center; gap: 10px; }
+        .checkbox-group input { width: 18px; height: 18px; }
+        .checkbox-group label { margin: 0; font-weight: normal; }
+        button[type="submit"] { width: 100%; padding: 12px; background-color: #0076ff; color: #fff; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+        button[type="submit"]:hover { background-color: #005ecc; }
+        .social-links { margin-top: 40px; }
+        .social-links h2 { margin-bottom: 15px; }
+        .social-links ul { list-style: none; display: flex; gap: 15px; flex-wrap: wrap; }
+        .social-links ul li a { background-color: #0076ff; color: #fff; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; }
+        .social-links ul li a:hover { background-color: #005ecc; }
+        .location { margin-top: 30px; color: #555; line-height: 1.8; }
+        .location h2 { color: #333; margin-bottom: 10px; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Trevor Wachira</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Me</h1>
+
+        <form action="#" method="POST">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="e.g. Trevor Wachira" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="e.g. trevor@email.com" required>
+
+                <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +254 700 000 000">
+            </fieldset>
+
+            <fieldset>
+                <legend>Message Details</legend>
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here (minimum 50 characters)..." minlength="50" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to my newsletter for updates and news</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <section class="social-links">
+            <h2>Find Me Online</h2>
+            <ul>
+                <li><a href="https://github.com/TrevorWachira690" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/trevor-wachira-091b703b3/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Location & Timezone</h2>
+            <address>
+                Nairobi, Kenya<br>
+                Timezone: East Africa Time (EAT) — UTC+3<br>
+                Email: <a href="mailto:trevorwachira69@gmail.com">trevorwachira69@gmail.com</a>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trevor Wachira. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
