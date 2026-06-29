@@ -6,14 +6,16 @@
     <title>Trevor Wachira - Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+Oriya:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TrevorWachira690/iyf-s11-week-02-TrevorWachira690@main/styles.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="site-nav">
         <a href="index.html" class="logo">Trevor Wachira</a>
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-btn" aria-label="Open navigation menu">&#9776;</label>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -23,69 +25,98 @@
 
     <main>
         <h1>Contact Me</h1>
+        <p>Have a question or want to work together? Fill in the form below.</p>
 
-        <form action="#" method="POST">
+        <div class="contact-layout">
 
-            <fieldset>
-                <legend>Personal Information</legend>
+            <div class="contact-form">
+                <form action="#" method="POST">
 
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" placeholder="e.g. Trevor Wachira" required>
+                    <fieldset>
+                        <legend>Personal Information</legend>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="e.g. trevor@email.com" required>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="e.g. Trevor Wachira" required>
 
-                <label for="phone">Phone Number <span class="optional">(optional)</span></label>
-                <input type="tel" id="phone" name="phone" placeholder="e.g. +254 700 000 000">
-            </fieldset>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. trevor@email.com" required>
 
-            <fieldset>
-                <legend>Message Details</legend>
+                        <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. +254 700 000 000">
+                    </fieldset>
 
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject" required>
-                    <option value="" disabled selected>Select a subject</option>
-                    <option value="general">General Enquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="feedback">Feedback</option>
-                </select>
+                    <fieldset>
+                        <legend>Message Details</legend>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" placeholder="Write your message here (minimum 50 characters)..." minlength="50" required></textarea>
-            </fieldset>
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
 
-            <fieldset>
-                <legend>Preferences</legend>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Subscribe to my newsletter for updates and news</label>
-                </div>
-            </fieldset>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message here (minimum 50 characters)..." minlength="50" required></textarea>
+                    </fieldset>
 
-            <button type="submit">Send Message</button>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to my newsletter for updates and news</label>
+                        </div>
+                    </fieldset>
 
-        </form>
+                    <button type="submit">Send Message</button>
 
-        <section class="social-links">
-            <h2>Find Me Online</h2>
-            <ul>
-                <li><a href="https://github.com/TrevorWachira690" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/trevor-wachira-091b703b3/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </section>
+                </form>
+            </div>
 
-        <section class="location">
-            <h2>Location & Timezone</h2>
-            <address>
-                Nairobi, Kenya<br>
-                Timezone: East Africa Time (EAT) — UTC+3<br>
-                Email: <a href="mailto:tmwgeorge69@gmail.com">tmwgeorge69@gmail.com</a>
-            </address>
-        </section>
+            <aside class="contact-sidebar">
+                <section class="social-links">
+                    <h2>Find Me Online</h2>
+                    <ul>
+                        <li><a href="https://github.com/TrevorWachira690" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/trevor-wachira-091b703b3/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </section>
+
+                <section class="location">
+                    <h2>Location &amp; Timezone</h2>
+                    <address>
+                        Nairobi, Kenya<br>
+                        Timezone: East Africa Time (EAT) — UTC+3<br>
+                        Email: <a href="mailto:tmwgeorge69@gmail.com">tmwgeorge69@gmail.com</a>
+                    </address>
+                </section>
+            </aside>
+
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Trevor Wachira. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>Web developer and programmer based in Nairobi, Kenya.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>tmwgeorge69@gmail.com</p>
+                <p>Nairobi, Kenya (EAT)</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Trevor Wachira. All rights reserved.</p>
     </footer>
 
 </body>

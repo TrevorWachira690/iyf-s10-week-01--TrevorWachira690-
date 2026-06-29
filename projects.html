@@ -6,14 +6,16 @@
     <title>Trevor Wachira - Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+Oriya:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TrevorWachira690/iyf-s11-week-02-TrevorWachira690@main/styles.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="site-nav">
         <a href="index.html" class="logo">Trevor Wachira</a>
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-btn" aria-label="Open navigation menu">&#9776;</label>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
@@ -23,6 +25,7 @@
 
     <main>
         <h1>My Projects</h1>
+        <p>Projects I have built while learning at IYF We Can Academy.</p>
 
         <section class="projects-grid">
 
@@ -62,8 +65,28 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Trevor Wachira. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>Web developer and programmer based in Nairobi, Kenya.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>tmwgeorge69@gmail.com</p>
+                <p>Nairobi, Kenya (EAT)</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Trevor Wachira. All rights reserved.</p>
     </footer>
 
 </body>

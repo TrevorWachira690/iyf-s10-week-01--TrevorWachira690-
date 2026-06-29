@@ -6,14 +6,16 @@
     <title>Trevor Wachira - About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+Oriya:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TrevorWachira690/iyf-s11-week-02-TrevorWachira690@main/styles.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="site-nav">
         <a href="index.html" class="logo">Trevor Wachira</a>
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-btn" aria-label="Open navigation menu">&#9776;</label>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="active">About</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -33,7 +35,7 @@
 
         <h2>Skills</h2>
         <ul>
-            <li>HTML & CSS</li>
+            <li>HTML &amp; CSS</li>
             <li>JavaScript</li>
             <li>Python</li>
             <li>Web Development</li>
@@ -41,11 +43,11 @@
             <li>Video Editing</li>
         </ul>
 
-        <h2>Education & Experience</h2>
+        <h2>Education &amp; Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <h3>2026 – Present</h3>
-                <p>Student at IYF We Can Academy — Programming, Web Development & Digital Marketing</p>
+                <p>Student at IYF We Can Academy — Programming, Web Development &amp; Digital Marketing</p>
             </div>
             <div class="timeline-item">
                 <h3>2026 – Present</h3>
@@ -57,7 +59,7 @@
             </div>
         </div>
 
-        <h2>Hobbies & Interests</h2>
+        <h2>Hobbies &amp; Interests</h2>
         <ul>
             <li>Video editing</li>
             <li>Taking leisurely walks</li>
@@ -65,8 +67,28 @@
         </ul>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Trevor Wachira. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>Web developer and programmer based in Nairobi, Kenya.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>tmwgeorge69@gmail.com</p>
+                <p>Nairobi, Kenya (EAT)</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Trevor Wachira. All rights reserved.</p>
     </footer>
 
 </body>
