@@ -39,7 +39,7 @@ I learnt how to use CSS efficiently in creating my webpages and I learnt how to 
 ![Portfolio screenshot](images/Personal-website.png)
 
 ## Live Demo
-[View Live Demo](https://trevorwachira690.github.io/iyf-s10-week-01--TrevorWachira690-/index.html)
+[View Live Demo](https://trevorwachira690.github.io/iyf-s11-week-01-TrevorWachira690/)
 
 ## Technical article
 [View on Linkedin](https://www.linkedin.com/pulse/technical-article-semantic-html-accessibility-trevor-wachira-nctxf/)
